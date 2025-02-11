@@ -1,0 +1,20 @@
+app.get('/category',(req,res)=>{
+    res.send("this is category")
+
+})
+app.get('/details',(req,res)=>{
+    res.send("this is category detail")
+
+})
+app.get('/product',(req,res)=>{
+    res.send("this is product")
+
+})
+app.get('/details',(req,res)=>{
+    res.send("this is product detail")
+
+})
+app.listen(port,(err)=>{
+    if(err) throw err
+    console.log("server is running on port"+port)
+})
